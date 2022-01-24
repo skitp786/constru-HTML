@@ -1,0 +1,309 @@
+/*
+  Theme Name: constru - Contruction HTML Template
+  Author: riaz uddin
+  Support: riaz522@gmail.com
+  Description: Creative  HTML5 template.
+  Version: 1.0
+*/
+
+/* CSS Index 
+-----------------------------------
+1. Theme default css
+2. header
+3. slider
+4. about-area
+5. features-box
+6. Process
+7. Work/ Portfolio
+8. Testimonial
+9. News/blog
+10. Contact 
+11. footer 
+*/
+
+/* 1. Theme default css */
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Rajdhani:wght@500;600;700&display=swap');
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+.img {
+  max-width: 100%;
+  transition: all 0.3s ease-out 0s;
+}
+.f-left {
+  float: left;
+}
+.f-right {
+  float: right;
+}
+.fix {
+  overflow: hidden;
+}
+a,
+.button {
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+a:focus,
+.button:focus {
+  text-decoration: none;
+  outline: none;
+}
+a:focus,
+a:hover,
+.portfolio-cat a:hover,
+.footer -menu li a:hover {
+  color: #01ffc8;
+  text-decoration: none;
+}
+a,
+button {
+  color: #ddd;
+  outline: medium none;
+  transition: all 0.3s ease-out 0s;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.capitalize {
+  text-transform: capitalize;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: normal;
+  color: #313131;
+  margin-top: 0px;
+  font-style: normal;
+  font-weight: 600;
+  text-transform: normal;
+}
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  color: inherit;
+}
+h1 {
+  font-size: 50px;
+  font-weight: 500;
+}
+h2 {
+  font-size: 36px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 22px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 14px;
+}
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+li {
+  list-style: none;
+  display: inline-block;
+}
+p {
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 25px;
+  color: #666;
+  margin-bottom: 15px;
+}
+hr {
+  border-bottom: 1px solid #eceff8;
+  border-top: 0 none;
+  margin: 30px 0;
+  padding: 0;
+}
+label {
+  color: #7e7e7e;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 400;
+}
+*::-moz-selection {
+  background: #ccff00;
+  color: #fff;
+  text-shadow: none;
+}
+::-moz-selection {
+  background: #ccff00;
+  color: #fff;
+  text-shadow: none;
+}
+::selection {
+  background: #ccff00;
+  color: #fff;
+  text-shadow: none;
+}
+*::-moz-placeholder {
+  color: #555555;
+  font-size: 14px;
+  opacity: 1;
+}
+*::placeholder {
+  color: #555555;
+  font-size: 14px;
+  opacity: 1;
+}
+.theme-overlay {
+  position: relative;
+}
+.theme-overlay::before {
+  background: #ffca01 none repeat scroll 0 0;
+  content: "";
+  height: 100%;
+  left: 0;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.separator {
+  border-top: 1px solid #f2f2f2;
+}
+
+/* button style */
+
+.btn {
+  background: #ffca01 none repeat scroll 0 0;
+  border: medium none;
+  border-radius: 2px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 1;
+  margin-bottom: 0;
+  padding: 13px 25px;
+  text-align: center;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  transition: all 0.3s ease 0s;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+.btn.btn-black {
+  background: #303b41;
+}
+.btn.btn-black:hover {
+  background: #1a1a1a;
+}
+.btn:hover {
+  background: #ffca01;
+  color: #fff;
+}
+.btn.btn-large {
+  padding: 10px 25px;
+}
+.btn-lg {
+  font-weight: 700;
+  padding: 13px 31px;
+}
+.btn.white-btn:hover {
+  border-color: #ddd;
+  color: #ddd;
+}
+.btn.btn-base.btn-link {
+  background: transparent none repeat scroll 0 0;
+  border: 0 none;
+  color: #ffca01;
+  padding: 0;
+  text-decoration: none;
+}
+.btn.btn-base.btn-link:hover {
+  color: #ffca01;
+}
+.theme-bg {
+  background: #ffca01;
+}
+.bg-white {
+  background-color: #ffffff;
+}
+.breadcrumb > .active {
+  color: #888;
+}
+.owl-carousel .owl-nav div {
+  background: rgba(255, 255, 255, 0.8) none repeat scroll 0 0;
+  height: 40px;
+  left: 20px;
+  line-height: 40px;
+  opacity: 0;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 0.3s ease 0s;
+  visibility: hidden;
+  width: 40px;
+}
+.owl-carousel .owl-nav div.owl-next {
+  left: auto;
+  right: 20px;
+}
+.owl-carousel:hover .owl-nav div {
+  opacity: 1;
+  visibility: visible;
+}
+.owl-carousel .owl-nav div:hover {
+  background: #ffca01;
+  color: #fff;
+}
+.owl-theme .owl-nav.disabled + .owl-dots {
+  margin-top: -27px;
+  position: absolute;
+  left: 50%;
+}
+
+
+/* 2. header */
+.box{
+  border: 2px solid #01ffc8;
+  background: #cc0000;
+  text-align: center;
+}
+/* 3. Hero */
+
+
+
+
+/* 4. about */
+
+
+
+
+/* 5. features-box */
+
+
+/* 6. Process */
+
+/* 7. Work/ Portfolio */
+
+/* 8. Testimonial */
+/* 9. News/blog */
+/* 10. Contact  */
+/* 11. footer  */
+
+
